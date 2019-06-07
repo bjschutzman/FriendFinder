@@ -24,4 +24,6 @@ var friends = [
     photo: 'https://i.pinimg.com/originals/bc/c1/34/bcc13482eb55f51cc84916f16cf603be.jpg',
     scores: [5, 5, 1, 1, 5, 5, 3, 5, 5, 5]
 }
-]
+];
+
+module.export = friends;
