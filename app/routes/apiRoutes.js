@@ -4,10 +4,11 @@ o	A POST routes /api/friends. This will be used to handle incoming survey result
 */
 
 var friends = require('../data/friends');
+// console.log(friends);
 
 module.exports = function(app){
     // GET route with the url /api/friends. This will be used to display a JSON of all possible friends.
-    app.get('/api/tables', function(req, res){
+    app.get('/api/friends', function(req, res){
         res.json(friends);
     });
 
@@ -39,6 +40,7 @@ module.exports = function(app){
 
             // after finding match, add user to friend array
             friends.push(user);
+            
 
             // send back to browser the best friend match
             res.json(friends[bestFriendIndex]);
